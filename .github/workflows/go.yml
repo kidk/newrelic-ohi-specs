@@ -23,6 +23,16 @@ jobs:
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
             dep ensure
         fi
+        make deps
 
     - name: Build
       run: make
+
+    - name: Create zipfile
+      run: zip develop -@ < deployfiles.txt
+
+    - name: Action Release
+      uses: yakuhzi/action-release@v1.2.0
+      with:
+        # File to upload to the release
+        file: develop.zip
