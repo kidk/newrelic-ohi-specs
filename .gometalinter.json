@@ -1,0 +1,5 @@
+{
+  "Enable": ["deadcode", "gofmt", "golint", "goimports"],
+  "Vendor": true,
+  "Exclude": ["../../vendor"]
+}

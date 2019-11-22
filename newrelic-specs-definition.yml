@@ -1,0 +1,34 @@
+# Copy this file (and the built 'bin' folder) into the following folder:
+#    Linux: /var/db/newrelic-infra/custom-integrations
+#    Windows: C:\Program Files\New Relic\newrelic-infra\custom-integrations
+#
+# For a complete description of the Definition File Specification, please
+# refer to the Integrations SDK documentation:
+# https://docs.newrelic.com/docs/integrations/integrations-sdk/file-specifications
+
+name: com.newrelic.specs
+description: Reports processor, chipset and other system specs
+protocol_version: 1
+os: linux
+
+commands:
+  all_data:
+    command:
+      - ./bin/newrelic-specs
+    interval: 60
+  metrics:
+    command:
+      - ./bin/newrelic-specs
+      - --metrics
+    interval: 60
+  inventory:
+    command:
+      - ./bin/newrelic-specs
+      - --inventory
+    prefix: config/newrelic-specs
+    interval: 60
+  events:
+    command:
+    - ./bin/newrelic-specs
+    - --events
+    interval: 60
