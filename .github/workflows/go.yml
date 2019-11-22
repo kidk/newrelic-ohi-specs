@@ -26,7 +26,7 @@ jobs:
         make deps
 
     - name: Build
-      run: make
+      run: make build
 
     - name: Create zipfile
       run: zip develop -@ < deployfiles.txt
