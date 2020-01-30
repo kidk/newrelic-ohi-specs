@@ -25,7 +25,7 @@ jobs:
         fi
 
     - name: Build
-      run: make compile-only
+      run: make build
 
     - name: Create zipfile
       run: zip develop -@ < deployfiles.txt
