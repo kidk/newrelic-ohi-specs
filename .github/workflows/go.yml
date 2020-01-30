@@ -24,6 +24,9 @@ jobs:
             dep ensure
         fi
 
+    - name: Get Go Meta Linter
+      run: curl -L https://git.io/vp6lP | sh
+
     - name: Build
       run: make compile
 
