@@ -1,31 +1,16 @@
 # New Relic Infrastructure Integration for specs
 
-Reports status and metrics for specs service
+Reports status and metrics for Operating System and bare metal specs.
 
 ## Requirements
 
-Document if the Integration has some special requirement. Ex: Installing an
-extra module, permissions to execute a binary, etc.
-
-## Configuration
-
-Document if the Integration needs some configuration for running. Ex: Set
-up permissions, add a special user, etc.
+* [New Relic infrastructure installed](https://docs.newrelic.com/docs/infrastructure/install-configure-manage-infrastructure)
+*
 
 ## Installation
 
-Describe the installation process for the Integration.
-
-## Usage
-
-Document mandatory and optional arguments for running the Integration, and how to execute it.
 
 ## Compatibility
 
-* Supported OS:
-* specs versions:
-* Edition:
+* Supported OS: Ubuntu, Debian, ..
 
-## Integration Development usage
-
-Describe the development workflow for this Integration.
