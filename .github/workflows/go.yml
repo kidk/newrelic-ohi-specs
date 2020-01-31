@@ -28,11 +28,11 @@ jobs:
       run: go build -o bin/newrelic-specs ./src
 
     - name: Create zipfile
-      run: zip develop -@ < deployfiles.txt
+      run: zip nr-specs-ohi -@ < deployfiles.txt
 
     - name: Release
       uses: fnkr/github-action-ghr@v1
       if: startsWith(github.ref, 'refs/tags/')
       env:
-        GHR_PATH: ./develop.zip
+        GHR_PATH: ./nr-specs-ohi.zip
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
