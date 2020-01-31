@@ -1,4 +1,4 @@
-bin/newrelic-specs.yml
+bin/newrelic-specs
 newrelic-specs-config.yml
-newrelic-specs.definition.yml
+newrelic-specs-definition.yml
 README.md
