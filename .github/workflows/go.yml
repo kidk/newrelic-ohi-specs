@@ -30,9 +30,8 @@ jobs:
     - name: Create zipfile
       run: zip develop -@ < deployfiles.txt
 
-    - name: Action Release
-      uses: yakuhzi/action-release@v1.2.0
-      with:
-        # File to upload to the release
-        file: develop.zip
-        tag: latest
+    - name: Release
+      uses: fnkr/github-action-ghr@v1
+      env:
+        GHR_PATH: develop.zip
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
